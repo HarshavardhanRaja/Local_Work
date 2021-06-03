@@ -1,0 +1,46 @@
+What in an Algorithm?
+A set of instructions or steps for completing a task
+A set of steps a program takes to finish a task.
+
+Algorathimic Thinking:
+=> Clearly defined problem statement, input, output.
+=> The steps in the Algorithm need to be in a very specific order.
+=> The Steps also needs to be specific.
+=> The Algorithm should produce a result.
+=> The algorithm should complete in a finite amount of time.
+
+Measuring performance of a Algorithm:
+==> Correctness
+==> Efficiency
+            1) Time Complexity.
+            2) Space Complexity.
+
+Time Complexity:
+    Polynomial Run times:
+        => O(1) --> Constant run time
+        => O(logn) --> sub linear run time
+        => O(n) --> Linear run time
+        => O(n logn) --> Quasi Linear run time
+        => O(n2) --> Quadratic run time
+        =>O(n3) --> Cubic run time
+    Exponential Run times:
+        => O(k^n) --> exponential run time
+        => O(n!) --> Factorial run time
+
+
+
+Linear Search: [TC->O(n), SC->O(1)]
+    => step1: Start at the begining
+    => step2: Compare current value to target value. if value found return the index
+    => step3: Move sequentially
+    => step4: Reach end of the list
+
+
+Binary Search: (should be sorted list) [TC->O(logn), SC->O(1)]
+    => step1: Determine middle position of sorted list.
+    => step2: Compare middle element to the target value.
+    => step3: if elements match return the index.
+              if not check weather middle element is smaller or greater than the target value.
+    => step4: if middle element is smaller then eliminate left part of the list and send the right part of list to step2
+              if middle element is greater then eliminate right part of the list and send the left part of list to step2
+    => step5: Return none if not found.

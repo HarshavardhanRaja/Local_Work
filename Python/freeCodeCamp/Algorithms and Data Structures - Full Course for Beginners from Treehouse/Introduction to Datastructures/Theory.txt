@@ -1,0 +1,19 @@
+Data Structure: 
+    => Data structure is a data storage format.
+    => It is collection of values & the format they are stored in.
+    => The relationships between the values in the collection as well as the operations applied on the data stored in the structure.
+
+
+Two types of Data structures:
+    Heterogeneous Datastructure                 |      Homogenous Datastructure
+    Can store any type of data like,            |      Can only store one type of data
+    int, float, str etc                         |      Ex:- array in c, java, swift etc.
+    ex: list in python                          |
+
+Important operations on Datastructures
+    => Access/Read values
+    => Search for an arbitary values
+    => Insert values at any point in the data structure.
+    => Delete values in the Ds.
+
+    
