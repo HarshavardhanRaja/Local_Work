@@ -40,10 +40,25 @@ for dirpath, dirnames, filenames in os.walk('directory_path'):
     print('Files', filenames)
     print()
 
-os.environ      prints all of the environment variables
+
+
+os.environ                      prints all of the environment variables
+os.environ.get('HOME')          To get value of particular environment variable
+
+Create a file at required path:
+
+filepath = os.path.join(os.environ.get('HOME'), 'test.txt')
+with open(file_path, 'w') as f:
+    pass
+
+
+os.path.basename('path')            prints basename i.e base file name
+os.path.dirname('path')             prints directory name
+os.path.split('path')               returns a tuple with  directory name fisrt and filename second
+os.path.exists('path')              To check if a path exists or not. Returns True/False
+os.path.isdir('path')               To check if a path is directory
+os.path.isfile('path')              To check if a path is file
+os.path.splittext('path')           Splits file path and extension
+
 
 """
-let = os.environ
-
-for i,k in let:
-    print(i,k)
