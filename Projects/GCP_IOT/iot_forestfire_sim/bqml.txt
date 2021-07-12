@@ -1,0 +1,53 @@
+CREATE OR REPLACE MODEL `coe-solutions-215839.BiqQuerryML.wild1`
+OPTIONS
+  (model_type='linear_reg',
+  L2_REG = .001,
+  MAX_ITERATIONS = 10,
+  EARLY_STOP = TRUE,
+  MIN_REL_PROGRESS = .01,
+  DATA_SPLIT_METHOD = 'RANDOM',
+  DATA_SPLIT_EVAL_FRACTION = 0.2,
+  input_label_cols=['area']) AS
+ SELECT
+   area , DMC, Temp ,  DC , ISI , FFMC , Y , X , Wind , rain , RH
+ FROM `coe-solutions-215839.iotlabdataset.FireDemo1`
+
+
+
+CREATE OR REPLACE MODEL `coe-solutions-215839.BiqQuerryML.wild5`
+OPTIONS
+  (model_type='linear_reg',
+  L2_REG = .01,
+  OPTIMIZE_STRATEGY  =  'BATCH_GRADIENT_DESCENT',
+  MAX_ITERATIONS = 10,
+  EARLY_STOP = False,
+  
+  DATA_SPLIT_METHOD = 'RANDOM',
+  DATA_SPLIT_EVAL_FRACTION = 0.2,
+  input_label_cols=['area']) AS
+ SELECT
+   area , DMC, Temp ,  DC , ISI , FFMC , Y , X , Wind , rain , RH
+ FROM `coe-solutions-215839.iotlabdataset.FireDemo1`
+
+
+
+
+SELECT * FROM
+ML.EVALUATE(
+  MODEL `coe-solutions-215839.BiqQuerryML.wild5`,
+  (
+  SELECT
+  area , DMC, Temp ,  DC , ISI , FFMC , Y , X , Wind , rain , RH
+    
+  FROM
+    `coe-solutions-215839.iotlabdataset.FireDemo1`
+ 
+  )
+)
+
+
+
+
+DELETE FROM `coe-solutions-215839.iotlabdataset.FireDemo1` WHERE DC >0
+
+

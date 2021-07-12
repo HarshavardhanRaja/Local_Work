@@ -1,0 +1,8 @@
+python cloudiot_mqtt_example_json.py \
+   --project_id=coe-solutions-215839\
+   --cloud_region=us-central1\
+   --registry_id=iotlab-registry \
+   --device_id=Device-1\
+   --private_key_file=rsa_private.pem \
+   --message_type=event \
+   --algorithm=RS256

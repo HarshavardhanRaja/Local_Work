@@ -1,0 +1,1 @@
+python batch.py --input=gs://80088/*.csv --runner=dataflow --project=formal-atrium-273514 --temp_location=gs://80088temp/ --staging_location=gs://80088temp/ --region=us-central1
