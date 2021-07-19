@@ -1,0 +1,17 @@
+There are three time series historical datasets EURUSD, USDJPY and EURJPY currency pairs attached, 
+use Close column for your analysis, other columns are available for any other analysis purpose, 
+feel free to employ them in your analysis. Perform the following -
+
+1. Normalize the graphs across the three datasets.
+2. Find any correlations across the datasets.
+3. Plot graphs and identify peaks and valleys.
+4. Can you find the trend? (ML)
+
+After your analysis, please note that this is a time series data and in real world, 
+your program will only get one data point at a time (in the example it will be 15 mins) 
+so provide pseudo code or details on how your program will analyze the stream of data and 
+how you will constantly update your analysis as new data points become available. 
+
+You can also provided how you employ ML on the available 3 datasets. 
+Please note that this is an open ended question. 
+Please try to show your programming skills and your analytical thinking in this problem.

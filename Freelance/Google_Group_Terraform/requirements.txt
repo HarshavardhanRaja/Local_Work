@@ -1,0 +1,17 @@
+
+# Service account requirements
+Service Usage Consumer: roles/serviceusage.serviceUsageConsumer on the billing project
+Organization Viewer: roles/resourcemanager.organizationViewer if using domain instead of customer_id
+
+Google Groups are an organization level resource, 
+the Service Account will require to be a Google Groups Admin to be able to create the Google Groups and manage the addition, removal of users/service accounts to and from the group
+
+
+
+# Commands used to run the script
+gcloud iam service-accounts keys create key.json --iam-account=my-iam-account@my-project.iam.gserviceaccount.com
+gcloud auth activate-service-account my-iam-account@my-project.iam.gserviceaccount.com --key-file=key.json
+
+terraform init
+terraform plan
+terraform apply
