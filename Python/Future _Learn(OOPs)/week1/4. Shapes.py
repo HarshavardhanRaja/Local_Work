@@ -341,3 +341,11 @@ if __name__ == "__main__":
     oval2.draw()
 
     my_drawing.display()
+
+
+
+
+    select Ename 
+    from table
+    where sal = max(sal)
+    

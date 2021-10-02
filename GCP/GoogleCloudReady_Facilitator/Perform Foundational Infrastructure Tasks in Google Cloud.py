@@ -19,3 +19,5 @@ Allocate cost effective resource sizes. Projects are monitored and excessive res
 # Task 2: Create a Pub/Sub topic
 # Task 3: Create the thumbnail Cloud Function
 # Task 4: Remove the previous cloud engineer
+
+
