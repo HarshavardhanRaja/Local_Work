@@ -1,0 +1,98 @@
+[
+    {
+        "bankName": "Connexus CU",
+        "bankID": 123456,
+        "date": "10-17-2021",
+        "timestamp": "10-17-2021 22:00:11",
+        "bankUrl": "https://www.connexuscu.org/",
+        "bankDetails": {
+            "loanType": "Auto Loan",
+            "itemType": [
+                {
+                    "type": "new",
+                    "urlLink": "https://www.connexuscu.org/loans/cars/refinance/",
+                    "minPeriod": 2.0,
+                    "maxPeriod": 7.0,
+                    "rateFrom": "2.49",
+                    "rateTo": "4.49",
+                    "maxAmount": ""
+                },
+                {
+                    "type": "used",
+                    "urlLink": "https://www.connexuscu.org/loans/cars/refinance/",
+                    "minPeriod": 2.0,
+                    "maxPeriod": 7.0,
+                    "rateFrom": "2.99",
+                    "rateTo": "5.99",
+                    "maxAmount": ""
+                }
+            ]
+        }
+    },
+    {
+        "bankName": "Connexus CU",
+        "bankID": 123456,
+        "date": "10-17-2021",
+        "timestamp": "10-17-2021 22:00:11",
+        "bankUrl": "https://www.connexuscu.org/",
+        "bankDetails": {
+            "loanType": "Personal Loan",
+            "itemType": [
+                {
+                    "type": "Unsecured Loan",
+                    "urlLink": "https://www.connexuscu.org/loans/personal/",
+                    "minPeriod": 2.0,
+                    "maxPeriod": 7.0,
+                    "rateFrom": "5.99",
+                    "rateTo": "9.99",
+                    "maxAmount": ""
+                }
+            ]
+        }
+    },
+    {
+        "bankName": "Connexus CU",
+        "bankID": 123456,
+        "date": "10-17-2021",
+        "timestamp": "10-17-2021 22:00:13",
+        "bankUrl": "https://www.connexuscu.org/",
+        "bankDetails": {
+            "loanType": "Mortgage Loan",
+            "itemType": [
+                {
+                    "type": "purchase",
+                    "urlLink": "https://www.connexuscu.org/loans/mortgage/",
+                    "minPeriod": 15.0,
+                    "maxPeriod": 30.0,
+                    "rateFrom": "2.566",
+                    "rateTo": "3.307",
+                    "maxAmount": "",
+                    "variableAPR": false,
+                    "fixedAPR": true
+                },
+                {
+                    "type": "purchase",
+                    "urlLink": "https://www.connexuscu.org/loans/mortgage/",
+                    "minPeriod": "3/3",
+                    "maxPeriod": "7/3",
+                    "rateFrom": "3.483",
+                    "rateTo": "3.802",
+                    "maxAmount": "",
+                    "variableAPR": true,
+                    "fixedAPR": false
+                },
+                {
+                    "type": "refinance",
+                    "urlLink": "https://www.connexuscu.org/loans/mortgage/",
+                    "minPeriod": 8.0,
+                    "maxPeriod": 12.0,
+                    "rateFrom": "3.533",
+                    "rateTo": "4.02",
+                    "maxAmount": "",
+                    "variableAPR": false,
+                    "fixedAPR": true
+                }
+            ]
+        }
+    }
+]
