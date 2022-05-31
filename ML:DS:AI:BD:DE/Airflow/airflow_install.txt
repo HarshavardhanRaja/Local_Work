@@ -1,0 +1,24 @@
+pip3 install virtualenv
+virtualenv -p python3 airflow_env
+source airflow_env/bin/activate
+pip3 install apache-airflow[all] / apache-airflow==2.3.1
+airflow initdb
+airflow users create —u <username_you_wanted> - password <password_you_wanted> — firstname <your_first_name> — lastname <your_last_name> — role Admin — email <your_email>
+airflow users create -u Harsha -p Harsha123 -e harshaiitg97@gmail.com -f Harsha -l Vardhan -r Admin
+airflow webserver
+airflow scheduler
+    [discretionary]
+    airflow list_dags
+    airflow list_tasks
+    airflow list_jobs
+    airflow list_users
+    airflow list_dag_runs
+    airflow list_active_dag_runs
+    airflow list_pools
+    airflow list_variables
+    airflow list_xcom
+    airflow list_sensors
+
+To Know more about airflow's release history, please visit:
+https://airflow.apache.org/announcements/#:~:text=December%2010%2C%202020,bridge%E2%80%9D%20release%20for%20Airflow%202.0.
+
