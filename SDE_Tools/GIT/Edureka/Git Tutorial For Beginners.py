@@ -139,9 +139,6 @@ git push
     -> pulling will import the commits where as pushing will export commits to remote repo
     -> git push origin <repo_name>
 
-
-
-
 Additional important commands
 
 git archive
@@ -160,8 +157,6 @@ git stash
     -> git stash status
     -> git stash apply
 """
-
-
 
 
 # Introduction to SSH Keys

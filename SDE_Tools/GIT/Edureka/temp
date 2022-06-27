@@ -1,0 +1,9 @@
+tday = 'Monday'
+
+if tday == 'Monday':
+    print('Working_day')
+
+tday = 'Sunday'
+
+if tday == 'Sunday':
+    print('Holiday')
